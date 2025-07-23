@@ -4,14 +4,14 @@ Ce projet a pour objectif de construire un **Perceptron Multicouche (MLP)** pour
 
 ---
 
-## 🧠 Objectif
+## Objectif
 
 Classer une image de chiffre manuscrit (28x28 pixels en niveaux de gris) en une des 10 classes possibles (0 à 9).
 
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 Le projet utilise le dataset **MNIST** :
 
@@ -24,14 +24,14 @@ Les images sont automatiquement téléchargées via `tf.keras.datasets.mnist` ou
 
 ---
 
-## ⚙️ Étapes du projet
+## Étapes du projet
 
-### 1. 📥 Chargement des données
+### 1. Chargement des données
 
 - Normalisation des pixels (valeurs entre 0 et 1)
 - Redimensionnement : aplatissement en vecteurs de taille **784 (28x28)**
 
-### 2. 🏗️ Architecture du MLP
+### 2. Architecture du MLP
 
 Architecture commune utilisée dans **TensorFlow** et **PyTorch** :
 
@@ -42,11 +42,11 @@ Dense 2: 256 neurones + ReLU
 Dense 3: 128 neurones + ReLU
 Output: 10 neurones + Softmax
 
-> 🔁 Activation utilisée : **ReLU**
+>  Activation utilisée : **ReLU**
 >  
-> 🧠 Sortie finale : **Softmax** sur 10 classes
+>  Sortie finale : **Softmax** sur 10 classes
 
-### 3. 🧪 Entraînement
+### 3. Entraînement
 
 - **Fonction de perte** :
   - `categorical_crossentropy` (TensorFlow)
@@ -56,7 +56,7 @@ Output: 10 neurones + Softmax
 - **Époques** : 10
 - **Batch size** : 32 ou 64
 
-### 4. 📊 Évaluation
+### 4. Évaluation
 
 - Évaluation sur l’ensemble de test
 - Affichage de la précision finale
@@ -64,7 +64,7 @@ Output: 10 neurones + Softmax
 
 ---
 
-## 📉 Résultats attendus
+## Résultats attendus
 
 - Précision attendue : **≥ 97%** sur l’ensemble de test
 - Affichage optionnel de quelques images avec leur prédiction
